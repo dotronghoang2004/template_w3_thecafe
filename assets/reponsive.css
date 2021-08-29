@@ -1,0 +1,9 @@
+@media screen and (max-width :600px) {
+   #header .t-address{
+       display: none;
+   }
+   #header .t-time-open{
+    display: none;
+   }
+    
+}

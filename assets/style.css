@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::before{
+    box-sizing: inherit;
+}
+
+
+#about::after , #menu::after,#where::after,.item-food::after,.footer::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+html,body{
+    font-family: 'Inconsolata', sans-serif;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.row{
+    float: left;
+}
+/*common*/
+/*font*/
+.t-center{
+    text-align: center !important;
+}
+.t-white{
+    color: white !important;
+}
+.t-fz15px{
+    font-size: 15px;
+}
+.t-fz18px{
+    font-size: 18px;
+}
+
+.t-fw{
+    font-weight: 600;
+}
+
+/*padding*/
+.pd12-24{
+    padding: 12px 24px;
+}
+
+.pd0-8{
+    padding: 0px 8px;
+}
+.pd64-0{
+    padding: 64px 0px;
+}
+.pd8-16{
+    padding: 8px 16px;
+}
+.pd48-16{
+    padding: 48px 16px;
+}
+
+.pd48-0{
+    padding: 48px 0px;
+}
+/*margin*/
+.mg10-0{
+    margin: 10px 0px;
+}
+
+.mg18-0{
+    margin: 18px 0px;
+}
+
+/*background*/
+.bg-black{
+    background-color: black !important;
+}
+
+/*collum*/
+.col-two{
+    width: 50%;
+    float: left;
+}
+.col-four{
+    width: 24.99999%;
+}
+/*nav*/
+#nav{
+    position: fixed ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 54px;
+    background-color: black;
+}
+
+#nav .col-four{
+    float: left;
+    text-align: center;
+    display: block;
+}
+
+#nav a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    display: block;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+#nav a:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+/* header*/
+#header{
+    background-image: url(./img/coffeehouse.jpg);
+    width: 100%;
+    height: 75%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter : grayscale(50%) ;
+}
+
+.t-time-open{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.t-time-open > p{
+    padding: 0 8px;
+    background-color: black;
+}
+.t-address{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.t-address p{
+    padding: 0px 8px;
+}
+.t-slogan{
+    font-size: 90px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.t-slogan > p{
+    line-height: 1.5;
+}
+#content{
+    max-width: 700px;
+    margin: 0 auto;
+    height: 100%;
+}
+h5 span{
+    letter-spacing: 4px;
+    display: inline-block;
+}
+h5{
+    font-size: 18px;
+    line-height: 27px; 
+}
+#menu,#about{
+    padding: 0.18px 16px;
+}
+.border-left{
+    border-left: 6px solid #ccc ;
+    background-color: #f1f1f1;
+    padding: 0.18px 16px;
+    margin: 16px 0px;
+}
+a{
+    text-decoration: none;
+}
+.item-food a{
+    color: black;
+    line-height: 27px;
+}
+.card #card-eat{
+    background-color: #616161;
+    color: white;
+}
+
+.item-food{
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%);
+}
+
+.menu-eat h5,.menu-drink h5{
+    font-weight: 600;
+}
+.menu-eat,.menu-drink{
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+.menu-eat{
+    display: block;
+}
+.menu-drink{
+    display: none;
+}
+#where{
+    padding: 0.18px 16px 32px;
+}
+.form-control{
+    width: 100%;
+    padding: 16px 8px;
+    font-size: 18px;
+    line-height: 27px;
+    border: 1px solid #ccc;
+
+}
+.form-submit{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 8px 16px;
+    border: none;
+    line-height: 27px;
+    font-family: inherit;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+.form-submit:hover{
+    background-color: #ccc;
+    color: black;
+}
+/*footer*/
+.footer{
+    width: 100%;
+    color: black;
+}
+
+.footer a{
+    text-decoration: underline;
+    color: black;
+}
